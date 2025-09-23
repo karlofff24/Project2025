@@ -22,5 +22,5 @@ def main():
     print("Subtraction:", subtract(x, y)) 
     print("Multiplication:", multiply(x, y))
     print("Division:", divide(x, y))       
-if name == "main":  
+if __name__ == "__main__":
     main()
