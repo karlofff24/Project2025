@@ -1,15 +1,17 @@
 
+
 def add(a, b):
     return a + b
 
-def substract(a, b):   
-    return a + b       
-
+def subtract(a, b):   
+    return a - b       
 def multiply(a, b):
     return a * b
 
 def divide(a, b):
-    return a / b   
+    if b == 0:
+        return "Error: Division by zero!"  
+    return a / b
 
 def main():
     print("Simple Calculator")
@@ -17,9 +19,8 @@ def main():
     y = int(input("Enter second number: "))
 
     print("Addition:", add(x, y))
-    print("Subtraction:", substract(x, y))   
+    print("Subtraction:", subtract(x, y)) 
     print("Multiplication:", multiply(x, y))
-    print("Division:", divide(x, y))         
-
-if __name__ == "__main__":
+    print("Division:", divide(x, y))       
+if name == "main":  
     main()
