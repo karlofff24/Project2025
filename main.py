@@ -1,17 +1,15 @@
-# Buggy Calculator Example
-# Created for Hacktoberfest 2025
 
 def add(a, b):
     return a + b
 
-def substract(a, b):   # Issue: wrong function name + incorrect logic
-    return a + b       # Bug: should be a - b
+def substract(a, b):   
+    return a + b       
 
 def multiply(a, b):
     return a * b
 
 def divide(a, b):
-    return a / b   # Issue: no division by zero handling
+    return a / b   
 
 def main():
     print("Simple Calculator")
@@ -19,9 +17,9 @@ def main():
     y = int(input("Enter second number: "))
 
     print("Addition:", add(x, y))
-    print("Subtraction:", substract(x, y))   # Wrong function used
+    print("Subtraction:", substract(x, y))   
     print("Multiplication:", multiply(x, y))
-    print("Division:", divide(x, y))         # Will crash if y=0
+    print("Division:", divide(x, y))         
 
 if __name__ == "__main__":
     main()
